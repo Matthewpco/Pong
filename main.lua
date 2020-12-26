@@ -43,6 +43,7 @@ VIRTUAL_HEIGHT = 243
 
 -- paddle movement speed
 PADDLE_SPEED = 200
+aiSpeed = 100
 
 --[[
     Called just once at the beginning of the game; used to set up
@@ -239,6 +240,20 @@ function love.update(dt)
     else
         player2.dy = 0
     end
+
+    -- player 2 ai
+    ballC = ball.y + ball.height / 2 + ball.width / 2
+    playerC = player2.y + player2.height / 2 + player2.width / 2
+    
+    if playerC > ballC then
+        player2.dy = -aiSpeed
+    elseif playerC < ballC then
+        player2.dy = aiSpeed
+    else
+        player2.dy = 0
+
+    end
+
 
     -- update our ball based on its DX and DY only if we're in play state;
     -- scale the velocity by dt so movement is framerate-independent
