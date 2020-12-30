@@ -241,7 +241,7 @@ function love.update(dt)
         player2.dy = 0
     end
 
-    -- player 2 ai
+    -- player 2 ai *** Over rides p2 controls
     ballC = ball.y + ball.height / 2 + ball.width / 2
     playerC = player2.y + player2.height / 2 + player2.width / 2
     
