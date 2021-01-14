@@ -2,7 +2,7 @@
 
 ![](https://github.com/Matthewpco/Pong/blob/master/Pong-img.png?raw=true)
 
-# This is my version of Pong made in Love with Lua and OO programming. 
+# This is my version of Pong made in Love with Lua, AI, and OO programming. 
 
 <br>
 
@@ -15,8 +15,4 @@
 ## ⚡ Features
 - Lua with Love
 - OO programming
-
-<br>
-
-
-Copyright: Matthew Payne 
+- A.I. Programming
